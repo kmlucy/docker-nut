@@ -8,4 +8,4 @@ EXPOSE 3493
 
 ADD entrypoint.sh /usr/local/bin/
 
-ENTRYPOINT /usr/local/bin/entrypoint.sh
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
