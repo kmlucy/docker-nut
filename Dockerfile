@@ -1,8 +1,7 @@
-FROM alpine:3.13
+FROM alpine:3.16
 LABEL maintainer "Kyle Lucy <kmlucy@gmail.com>"
 
-RUN echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >>/etc/apk/repositories && \
-    apk add --no-cache nut@testing libressl
+RUN apk add --no-cache nut libressl
 
 EXPOSE 3493
 
