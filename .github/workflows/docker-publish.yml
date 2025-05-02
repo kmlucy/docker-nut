@@ -30,6 +30,7 @@ jobs:
     permissions:
       contents: write
       packages: write
+      actions: write
 
     steps:
       - name: Checkout repository
@@ -66,6 +67,4 @@ jobs:
 
       # Keep repository alive
       - name: Keep repository alive
-        uses: gautamkrishnar/keepalive-workflow@master
-        with:
-          time_elapsed: 20
+        uses: liskin/gh-workflow-keepalive@v1
